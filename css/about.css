@@ -1,0 +1,291 @@
+@charset "utf-8";
+body,div,ul,li,a,p,h1,h2,h3,h4,h5,h6,dl,dt,dd{
+	padding: 0;
+	margin: 0;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+*{
+outline:none;
+}
+.clearfix:after{/*高级清除浮动*/
+	content: "";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+.clearfix{/*兼容IE低版本浏览器*/
+	zoom: 1;
+}
+/************************头部样式***************************/
+#header{
+	width: 100%;
+	background: #333;
+}
+#header .header_center{
+	width: 1263px;
+	margin: 0 auto;
+}
+#header .header_logo{
+	width: 240px;
+	height: 70px;
+	float: left;
+	text-indent: -9999px;
+	background: url("../img/logo.png");
+}
+#header .header_nav{
+	height: 70px;
+	float: right;
+}
+#header .header_nav li{
+	float: left;
+	width: 120px;
+	line-height: 70px;
+	text-align: center;
+}
+#header .header_nav li a{
+	color: #eee;
+	display: block;
+}
+#header .header_nav .active{
+	background: #000;
+}
+#header .header_nav li:hover{
+	background: #000;
+}
+/************************头部样式结束***************************/
+
+
+/************************轮播样式***************************/
+#search{
+	width: 100%;
+	height: 300px;
+	background: url("../img/headline.jpg") no-repeat center;
+	position: relative;
+}
+#search .bg{
+	width: 100%;
+	height: 300px;
+	position: absolute;
+	background: black;
+	opacity: 0.3;
+	filter: alpha(opacity=30);
+}
+#search .search_center{
+	width: 450px;
+	height: 75px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -30px 0 0 -500px;
+}
+#search .search_center h1{
+	color: white;
+	font-size: 35px;
+	height: 55px;
+	line-height: 55px;
+	text-align: left;
+}
+#search .search_center p{
+	color: white;
+	text-align: left;
+	font-size: 20px;
+	height: 20px;
+	font-weight: bold;
+}
+#search .search_btn{
+	width: 120px;
+	height: 54px;
+	background-color: #eee;
+	border: 1px solid #666;
+	border-radius: 10px;
+	position: absolute;
+	cursor: pointer;
+	left: 50%;
+    top:50%;
+    margin: -28px 0 0 177px;
+}
+/************************轮播样式结束***************************/
+/************************内容样式***************************/
+#tour{
+	width: 1263px;
+	margin: 20px auto;
+}
+#tour .tour_left{
+	width: 910px;
+	float: left;
+}
+#tour .tour_left h1{
+	width: 910px;
+	height: 70px;
+	font-size: 30px;
+	line-height: 70px;
+	color: #666;
+	border-bottom:1px dashed #999;
+	font-weight: normal;
+}
+#tour .tour_left p{
+	margin-top: 30px;
+	font-size: 18px;
+	color: #666;
+	line-height: 40px;
+}
+#tour .tour_left h2{
+	width: 910px;
+	height: 70px;
+	font-size: 30px;
+	line-height: 70px;
+	color: #666;
+	border-bottom:1px dashed #999;
+	font-weight: normal;
+	margin-top: 65px;
+}
+#tour .tour_left ul{
+	margin-top: 25px;
+}
+#tour .tour_left ul li{
+	height: 35px;
+	font-size: 18px;
+	line-height: 35px;
+	color: #666;
+}
+#tour .tour_right{
+	float: right;
+}
+#tour .tour_right_top{
+	width: 340px;
+	height: 330px;
+	border: 1px solid #eee;
+}
+#tour .tour_right .tour_right_top h3{
+	line-height: 40px;
+	text-indent: 1em;
+	height: 40px;
+	background: #fafafa;
+	font-size: 16px;
+}
+#tour .tour_right .tour_right_top .list span{
+	display: block;
+	width: 100px;
+	height: 35px;
+	background: #eee;
+	color: #666;
+	font-size: 12px;
+	float: left;
+	line-height: 35px;
+	margin: 2px;
+	text-indent: 10px;
+}
+#tour .tour_right .tour_right_top .list{
+	margin: 8px 13px;
+}
+#tour .tour_right .tour_right_top .list span:hover{
+	background: #458b00;
+	color: white;
+	cursor: pointer;
+}
+#tour .tour_right .right_countainer{
+	width: 340px;
+	height: 675px;
+	border: 1px solid #eee;
+	margin-top: 10px;
+}
+#tour .tour_right .right_countainer h3{
+	height: 40px;
+	background: #fafafa;
+	line-height: 40px;
+	text-indent: 10px;
+	font-size: 16px;
+}
+#tour .tour_right .right_countainer .list .tom{
+	width: 150px;
+	height: 150px;
+	margin: 5px;
+	float: left;
+}
+#tour .tour_right .right_countainer .list .tom p{
+	height: 30px;
+	font-size: 14px;
+	text-align: center;
+}
+#tour .tour_right .right_countainer .list{
+	margin: auto 10px;
+}
+#tour .tour_right .right_footer{
+	width: 340px;
+	height: 150px;
+	border: 1px solid #eee;
+	margin-top: 10px;
+}
+#tour .tour_right .right_footer .list{
+	margin: 15px 16px;
+}
+#tour .tour_right .right_footer h3{
+	height: 40px;
+	font-size: 16px;
+	text-indent: 10px;
+	line-height: 40px;
+	background: #fafafa;
+}
+#tour .tour_right .right_footer .tom{
+	float: left;
+	width: 150px;
+	height: 40px;
+	background: #eee;
+	margin: 2px;
+}
+#tour .tour_right .right_footer .tom span{
+	font-size: 14px;
+	line-height: 40px;
+	color: #666;
+	display: block;
+	float: left;
+}
+#tour .tour_right .right_footer .tom img{
+	padding: 10px 10px;
+	float: left;
+}
+/************************内容样式结束***************************/
+/************************底部样式***************************/
+#footer{
+	width: 100%;
+	background-color: #222;
+}
+#footer .footer_center{
+	width: 1263px;
+	margin: 0 auto;
+}
+#footer .footer_center dl{
+	float: left;
+	width: 410px;
+	height: 280px;
+	color: #666;
+}
+#footer .footer_center dl dt{
+	font-size: 24px;
+	padding: 20px 0 10px 20px;
+	color: #ccc;
+}
+#footer .footer_center hr{
+	width: 90%;
+	border: 1px dashed #777;
+}
+#footer .footer_center dl dd{
+	color: #777;
+	padding-left: 20px;
+	font-size: 18px;
+	line-height: 2;
+}
+#footer p{
+	height: 80px;
+	line-height: 80px;
+	background: #000;
+	text-align: center;
+    color: #777;
+    border-top: 1px solid #444;
+}

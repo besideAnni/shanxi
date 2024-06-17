@@ -1,0 +1,215 @@
+@charset "utf-8";
+body,div,ul,li,a,p,h1,h2,h3,h4,h5,h6,dl,dt,dd{
+	padding: 0;
+	margin: 0;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.clearfix:after{/*高级清除浮动*/
+	content: "";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+.clearfix{/*兼容IE低版本浏览器*/
+	zoom: 1;
+}
+/************************头部样式***************************/
+#header{
+	width: 100%;
+	background: #333;
+}
+#header .header_center{
+	width: 1263px;
+	margin: 0 auto;
+}
+#header .header_logo{
+	width: 240px;
+	height: 70px;
+	float: left;
+	text-indent: -9999px;
+	background: url("../img/logo.png");
+}
+#header .header_nav{
+	height: 70px;
+	float: right;
+}
+#header .header_nav li{
+	float: left;
+	width: 120px;
+	line-height: 70px;
+	text-align: center;
+}
+#header .header_nav li a{
+	color: #eee;
+	display: block;
+}
+#header .header_nav .active{
+	background: #000;
+}
+#header .header_nav li:hover{
+	background: #000;
+}
+/************************头部样式结束***************************/
+
+
+/************************轮播样式***************************/
+#search{
+	width: 100%;
+	height: 600px;
+	background: url("../img/search.jpg") no-repeat center;
+	position: relative;
+}
+#search .search_center{
+	width: 600px;
+	height: 60px;
+	background: #000;
+	opacity: 0.6;
+	filter: alpha(opacity=60);/*兼容IE低版本*/
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -30px 0 0 -300px;
+	border-radius: 10px;
+}
+#search .search_text{
+	width: 446px;
+	height: 52px;
+	background-color: #eee;
+	color: #666;
+	border: 1px solid #666;
+	border-radius: 10px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -28px 0 0 -295px;
+    font-size: 24px;
+    padding: 0 10px;
+    outline: none;
+}
+#search .search_btn{
+	width: 120px;
+	height: 54px;
+	background-color: #eee;
+	border: 1px solid #666;
+	border-radius: 10px;
+	position: absolute;
+	cursor: pointer;
+	left: 50%;
+    top:50%;
+    margin: -28px 0 0 177px;
+}
+/************************轮播样式结束***************************/
+/************************内容样式***************************/
+#tour{
+	width: 1263px;
+	margin: 20px auto;
+}
+#tour .tour_title{
+	text-align: center;
+	color: #666;
+}
+#tour .tour_title h1{
+	font-size: 45px;
+	letter-spacing: 2px;
+}
+#tour .tour_title p{
+	margin: 10px 0;
+}
+#tour .tour_container{
+	width: 100%;
+}
+#tour .tour_container li{
+	position: relative;
+	width: 380px;
+	border: 1px solid #ccc;
+	padding: 4px;
+	border-radius: 4px;
+	float: left;
+	margin: 15px 12px;
+}
+#tour .tour_container li .desc{
+	padding: 7px 0 5px 0;
+	color: #666;
+	font-size: 14px;
+	line-height: 1.5;
+	letter-spacing: 2px;
+}
+#tour .tour_container li .desc strong{
+	color: #333;
+	font-style: normal;
+}
+#tour .info{
+	padding-top: 5px;
+}
+#tour .info .sat{
+	float: right;
+	font-style: normal;
+	position: relative;
+	right: 5px;
+	top: 5px;
+}
+#tour .info .price{
+    color: #f60;
+}
+#tour .desc .info .price strong{
+	color: #f60;
+	font-weight: bold;
+    font-size: 16px;
+}
+#tour .type{
+	width: 90px;
+	height: 25px;
+	position: absolute;
+	line-height: 25px;
+	font-size: 14px;
+	text-align: center;
+	color: #fff;
+	background-color: #59b200;
+	left: 4px;
+	top: 4px;
+}
+/************************内容样式结束***************************/
+/************************底部样式***************************/
+#footer{
+	width: 100%;
+	background-color: #222;
+}
+#footer .footer_center{
+	width: 1263px;
+	margin: 0 auto;
+}
+#footer .footer_center dl{
+	float: left;
+	width: 410px;
+	height: 280px;
+	color: #666;
+}
+#footer .footer_center dl dt{
+	font-size: 24px;
+	padding: 20px 0 10px 20px;
+	color: #ccc;
+}
+#footer .footer_center hr{
+	width: 90%;
+	border: 1px dashed #777;
+}
+#footer .footer_center dl dd{
+	color: #777;
+	padding-left: 20px;
+	font-size: 18px;
+	line-height: 2;
+}
+#footer p{
+	height: 80px;
+	line-height: 80px;
+	background: #000;
+	text-align: center;
+    color: #777;
+    border-top: 1px solid #444;
+}
